@@ -9,7 +9,7 @@ A shell script for DevOps engineers to list users with read access to a GitHub r
 - Uses GitHub REST API v3.
 - Helps audit repository access daily without manually logging in.
 
-## 🖥️ Prerequisites
+##  Prerequisites
 
 - GitHub Personal Access Token (Classic)
 - `curl`, `jq`, and `bash` installed on your machine
@@ -52,7 +52,7 @@ A shell script for DevOps engineers to list users with read access to a GitHub r
   * Create repositories
   * Set up teams and permissions
 
-## 🔐 Generate GitHub Token
+##  Generate GitHub Token
 
 1. Go to **GitHub > Settings > Developer Settings > Personal Access Tokens (classic)**.
 2. Click **"Generate new token (classic)"**.
@@ -68,7 +68,7 @@ export username="your_github_username"
 export token="your_personal_access_token"
 ````
 
-### 2. Clone or create the script file
+### 2. Create the script file
 
 Create a file `list-users.sh` and add the following:
 
@@ -86,13 +86,15 @@ chmod +x list-users.sh
 
 Replace `<REPO_OWNER>` and `<REPO_NAME>` with the respective GitHub organization/username and repository name.
 
-## 🧑‍💼 Example
+![image](https://github.com/user-attachments/assets/5aba8948-31c7-4772-af5a-abceef8a0e31)
+
+##  Example
 
 ```bash
-./list-users.sh my-org my-repo
+./list-users.sh DevopsOrg09 Shell-Project
 ```
 
-## ⚠️ Security Note
+##  Security Note
 
 * **Never hardcode your personal access token in scripts.**
 * Use environment variables or secret managers instead.
